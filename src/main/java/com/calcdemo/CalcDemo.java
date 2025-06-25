@@ -7,17 +7,19 @@ import java.util.Scanner;
  */
 public class CalcDemo
 {
-    public Scanner sc = new Scanner(System.in);
     public int sum(int a, int b)
     {
-        return a+b;
+        return (a+b);
     }
     public static void main( String[] args )
     {
+        CalcDemo obj = new CalcDemo();
+        Scanner sc = new Scanner(System.in);
         System.out.println( "Enter first number: " );
-        a = sc.nextLine();
+        int a = sc.nextInt();
         System.out.println( "Enter second number: " );
-        b = sc.nextLine();
-        System.out.println( "The SUM is: " + sum(a,b) );
+        int b = sc.nextInt();
+        System.out.println( "The SUM is: " + obj.sum(a,b) );
+        sc.close();
     }
 }
